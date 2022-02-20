@@ -1,0 +1,50 @@
+body {
+    background-color: #f2cd5e;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto 50% 400px;
+    grid-template-rows: 200px 100px 500px 120px;
+    gap: 5px;
+    background-color: #1f4774;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-template-areas:
+        "cabecalho cabecalho cabecalho cabecalho"
+        "menu menu menu menu "
+        " principal principal principal lateral"
+        "rodape rodape rodape rodape"
+    ;
+}
+
+.container * {
+    border-radius: 10px;
+
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+    background-color: #fdfdfd;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: #fdfdfd;
+}
+
+.lateral {
+    grid-area: lateral;
+    background-color: #fdfdfd;
+}
+
+.principal {
+    grid-area: principal;
+    background-color: #fdfdfd;
+}
+
+.rodape {
+    grid-area: rodape;
+    background-color: #fdfdfd;
+}
